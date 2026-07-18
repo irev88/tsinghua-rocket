@@ -1,0 +1,40 @@
+{
+  "mission": {
+    "name": "Conceptual Small Reusable Launch Vehicle (CRLV-1)",
+    "payload_threshold_kg": 1200,
+    "payload_goal_kg": 2000,
+    "target_orbit": "500 km circular LEO or 700 km SSO",
+    "reusability_target_flights": 10,
+    "reusability_goal_flights": 20,
+    "turnaround_days_target": 30,
+    "turnaround_goal_days": 14
+  },
+  "constraints": {
+    "max_g_load_ascent": 4.5,
+    "max_dynamic_pressure_kPa": 40,
+    "landing_accuracy_m": 100,
+    "first_stage_reuse_cost_percent": 15
+  },
+  "figures_of_merit_weights": {
+    "payload_reusable_kg": 0.30,
+    "recurring_cost_per_kg_usd": 0.25,
+    "reusability_score": 0.20,
+    "sustainability_gri": 0.15,
+    "responsiveness_days": 0.10
+  },
+  "key_assumptions": {
+    "staging": "Two-stage, reusable booster + expendable upper",
+    "primary_propellant": "LOX/LCH4 (methalox)",
+    "recovery_baseline": "Propulsive landing with grid fins + legs",
+    "alternative_recovery": "Net capture on sea platform (evaluated)",
+    "sustainability_metric": "Green Reusability Index (GRI)"
+  },
+  "reference_vehicles": [
+    "SpaceX Falcon 9 (~22800 kg reusable LEO)",
+    "Landspace Zhuque-3 (~18300 kg recovered)",
+    "iSpace Hyperbola-3 (8500 kg recovered)",
+    "Galactic Energy Pallas-1 (8000 kg baseline)",
+    "CASC Long March 12A / 10B (net capture demonstrated 2026)"
+  ],
+  "notes": "Refined 2026-07-18 after deep research. All payload/reusability numbers drawn from or directly compared to 2025-2026 public data (SpaceNews, Ars Technica, company reports). Sustainability and net-capture are novel emphases for this conceptual project."
+}
